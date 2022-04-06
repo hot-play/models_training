@@ -23,14 +23,17 @@
         </div>
         <div class="container">
             <div class="row justify-content-center mt-4">
-                <div class="col-6">
+                <div class="col-3">
                     <form id="form" action="/" method="POST" enctype="multipart/form-data">
-                        <label class="form-label"  for="file-upload">File Upload:</label>
+                        <div class=" col"></div>
+                        <label class="form-label"  for="file-upload"></label>
                         <input class="form-control" type="file"  name="file" id="file-upload" accept=".csv" required />
-                        <button class="btn btn-primary mt-3" style="background-color:black" type="submit" id="submit">Train the model</button>
-                        <div class="loader mx-auto" hidden></div>
                     </form>
                 </div>
+                <div class="col-6">
+                    <button class="btn btn-primary mt-4" style="background-color:black" type="submit" id="submit">Train the model</button>
+                </div>
+                <div class="loader mx-auto" hidden></div>
             </div>
         </div>
         <script
